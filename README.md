@@ -48,6 +48,8 @@ python SameCodeFinder.py [arg0] [arg1]
 	* max hamming distance to keep, default is 20
 * ```--min-linecount=[input]```
 	* for function scan, the function would be ignore if the total line count of the function less than min-linecount
+* ```--output=[intput]```
+    * Customize the output file, default is "out.txt"
 	
 
 ## Requirement

@@ -297,6 +297,7 @@ def print_help():
     print "\t--functions - Use Functions as code scan standard"
     print "\t              Attention: The \"--functions\" support just Object-C and Java now"
     print "\t--detail    - Show the detail of process\n"
+    print "\t--output=[intput] - Customize the output file, default is \"out.txt\""
 
 ################ End Util Funcs ################
 
