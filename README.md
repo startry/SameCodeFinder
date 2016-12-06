@@ -15,7 +15,7 @@ The below photo show the calculate result of [MWPhotoBrowser](https://github.com
 
 The result come from the command
 ```
-python SameCodeFinder.python ~/Projects/opensource/MWPhotoBrowser/ .m  --max-distance=10 --min-linecount=3 --functions --detail
+python SameCodeFinder.py ~/Projects/opensource/MWPhotoBrowser/ .m  --max-distance=10 --min-linecount=3 --functions --detail
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ pip install simhash
 Visit [A Python Implementation of Simhash Algorithm](http://leons.im/posts/a-python-implementation-of-simhash-algorithm/) if you want to know more about the module.
 
 ``` Ruby
-python risk_block_scanner.py [arg0] [arg1] 
+python SameCodeFinder.py [arg0] [arg1] 
 ```
 
 #### Optional
