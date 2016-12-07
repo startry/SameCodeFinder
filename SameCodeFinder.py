@@ -120,16 +120,14 @@ def hash_funcs(root_path, suffix):
                 continue
 
             if not is_function_started and re.findall(grammar_regex_by_suffix(suffix), line):
-                ## for now, SameCodeFinder support Object-C only
-                if not is_function_start_line(line, suffix):
-                    continue
+                ## for now, SameCodeFinder support Object-C and Java only
+                if is_function_start_line(line, suffix):
+                    single_beauti_name = beautify_func_name(line, suffix)
 
-                single_beauti_name = beautify_func_name(line, suffix)
-
-                # Reset Line Content
-                single_func_content  = ""
-                single_line_count    = 0
-                single_bracket_count = 0
+                    # Reset Line Content
+                    single_func_content  = ""
+                    single_line_count    = 0
+                    single_bracket_count = 0
 
             single_func_content  = single_func_content + line
             single_line_count    = single_line_count   + 1
